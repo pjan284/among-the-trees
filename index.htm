@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Among the Trees</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" media="all" href="css/style.css" />
+        <script type="text/javascript" src="js/lib/three.min.js"></script>
+        <script type="text/javascript" src="js/lib/webgl-utils.js"></script>
+        <script type="text/javascript" src="js/lib/glMatrix-0.9.5.min.js"></script>
+        <script type="text/javascript" src="js/utils.js"></script>
+        <script type="text/javascript" src="js/matrixStack.js"></script>
+        <script type="text/javascript" src="js/input.js"></script>
+        <script type="text/javascript" src="js/tree.js"></script>
+        <script type="text/javascript" src="js/ground.js"></script>
+        <script type="text/javascript" src="js/forest.js"></script>
+        <script type="text/javascript" src="js/demo.js"></script>
+        <script type="text/javascript" src="js/player.js"></script>
+    </head>
+    <body>
+        <!--
+        Controls:
+            Arrows: Look
+            W/S: Move
+        Texures taken from:
+            tree.jpg: http://ftourini.deviantart.com/art/tileable-tree-bark-texture-216962711 (modified)
+            grass.jpg: http://opengameart.org/node/10158 (modified)
+        -->
+        <script type="text/javascript">
+            var demo = new Demo();
+            function frame()
+            {
+                demo.animate();
+                demo.render();
+                requestAnimationFrame( frame );
+            }
+            frame();
+        </script>
+    </body>
+</html> 
